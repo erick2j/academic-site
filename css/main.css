@@ -75,3 +75,13 @@
 #about p {
     font-size: 12pt;
 }
+
+a,
+a:visited {
+    color: var(--dodger-blue);
+}
+
+a:hover,
+a:focus {
+    color: var(--dodger-red);
+}
