@@ -1,9 +1,15 @@
+:root {
+    --dodger-blue: #005A9C;
+    --dodger-red: #EF3E42;
+    --dodger-white: #FFF;
+}
+
 /* Reusable button-style links */
 .button-link {
     display: inline-block;
     padding: 1% 2%;
     border-radius: 1%;
-    background-color: #1E90FF;
+    background-color: var(--dodger-blue);
     color: #fff;
     font-weight: bold;
     text-decoration: underline;
@@ -16,22 +22,56 @@
 }
 
 .button-link:hover {
-    outline: solid;
-    background-color: #fff;
-    color: #1E90FF;
-    transform: translateY(-5%);
+    outline: 2px solid var(--dodger-blue);
+    background-color: var(--dodger-white);
+    color: var(--dodger-red);
+    transform: translateY(-5%) scale(1.1);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
 
 .button-link:focus-visible {
-    outline: 3px solid #fff;
+    outline: 3px solid var(--dodger-blue);
     outline-offset: 2px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
 
 .button-link:active {
-    background-color: #1E90FF;
+    background-color: var(--dodger-blue);
     color: #fff;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+/* Social profile / icon links */
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: var(--dodger-blue);
+    text-decoration: none;
+    transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.social-link:visited {
+    color: var(--dodger-blue);
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: var(--dodger-blue);
+    transform: scale(1.2);
+    text-decoration: none;
+}
+
+.social-link:focus-visible {
+    color: var(--dodger-blue);
+    transform: scale(1.5);
+    outline: 3px solid rgba(21, 88, 176, 0.4);
+    outline-offset: 4px;
+    text-decoration: none;
+}
+
+#about p {
+    font-size: 12pt;
 }
