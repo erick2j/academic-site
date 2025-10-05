@@ -42,6 +42,43 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
 }
 
+.mail-button {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 2px solid var(--dodger-blue);
+    background-color: var(--dodger-white);
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.12s ease, box-shadow 0.12s ease, color 0.12s ease;
+}
+
+.mail-button:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+.mail-button:hover,
+.mail-button:focus {
+    color: var(--dodger-red);
+    text-decoration: none;
+    transform: translateY(-2%) scale(1.03);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+.mail-button:focus-visible {
+    outline: 2px solid var(--dodger-blue);
+    outline-offset: 2px;
+}
+
+.mail-button--full {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 /* Social profile / icon links */
 .social-link {
     display: inline-flex;
@@ -73,7 +110,7 @@
 }
 
 #about p {
-    font-size: 12pt;
+    font-size: 14pt;
 }
 
 a,
